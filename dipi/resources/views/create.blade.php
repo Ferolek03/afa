@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="csrf-token" content="{{csrf_token()}}">
 	<link rel="stylesheet" href="./src/assets/login.css">
 	<title>Document</title>
     @vite('resources/js/app.js')
@@ -38,8 +37,8 @@
     <div id="auth"></div> 
     <script type="module" src="/src/app.js"></script> 
 
-    <div id="login">
-        <Login />
+    <<div id="create">
+        <Create />
     </div>
 
 <script src="{{ mix('js/app.js') }}"></script>

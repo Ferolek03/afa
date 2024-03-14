@@ -6,9 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="csrf-token" content="{{csrf_token()}}">
-	<link rel="stylesheet" href="../css/app.css">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_US" type="text/javascript">
-    </script>
+	<link rel="stylesheet" href="../css/app.css">    
 	<title>Главная страница</title>
     @vite('resources/js/app.js')
 </head>
@@ -17,23 +15,21 @@
 		<div class="left_bar">
 			<img class="logo" src="/image/dark.png" alt="логотип">
 				<div class="fone">
-					<!-- <img src="./src/components/icons/Vector-1.png" alt=""> -->
 					<p>22-22-22</p>
 				</div>
 
-				<div id="dt"></div> 
-        <DarkTema />
-	</div>	
+
+				<!-- <div id="app"></div> 
+        <DarkTema></DarkTema>
+	</div>	 -->
 			 
 
-    <div id="search"></div> 
-        <Search />
-	</div>
+
 
 	<div class="right_bar">			
     	<a href="./signup">Регистрация</a>
     	<a href="./login">Вход</a>
-    	<a href="./generate.html">Создание заявки</a>
+    	<a href="./create">Создание заявки</a>
 		<a href="./profile.html">Профиль</a>
 		<a href="./about">О нас</a>
 	</div>
@@ -46,26 +42,22 @@
 				<p class="text_main_bot">Доставим пиццу в течении 30 минут</p>
 				<button class="btn">заказать</button>
 			</div>
-			<div class="right_block">
-				<img class="main_img" src="./src/components/icons/pngwing.com (1).png" alt="">
-			</div>
+			
 		</div>
 		
-        <div id="slider">
-        <Slider />
+        <div id="app">
+        <Slider>
+		</Slider>
          </div>
 
-		 <div id="create">
+		 <!-- <div id="create">
 			<Create />
-		 </div>
+		 </div> -->
 
-		 <div id="map">
-			<Map />
-		 </div>
 
-		<div id="add">
+		<!-- <div id="add">
 			<AddFile />
-		</div>
+		</div> -->
 
 
 		

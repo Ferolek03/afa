@@ -15,6 +15,7 @@
         "leaflet": "^1.9.4",
         "leaflet-routing-machine": "^3.2.12",
         "vue": "^3.4.20",
-        "vue-yandex-maps": "^2.0.1"
+        "vue-yandex-maps": "^2.0.1",
+        "yarn": "^1.22.21"
     }
 }

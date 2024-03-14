@@ -25,3 +25,9 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/create', function () {
+    return view('create');
+});
+
+
+Route::post('/image/upload', 'ImageController@upload')->name('image.upload');

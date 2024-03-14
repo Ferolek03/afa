@@ -3,26 +3,27 @@ import laravel from 'laravel-vite-plugin';
 import vue from "@vitejs/plugin-vue"
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        vue({
-            template: {
-            compilerOptions: {
-              isCustomElement: (tag) => ['md-linedivider'].includes(tag),
-            }
-          }
-        }),
-    
-    ],
-    
-
-    resolve: {
-        alias:{
-            '@': '/Users/samvel/Desktop/afa/dipi',
-            'vue': 'vue/dist/vue.esm-bundler.js'
+  plugins: [
+    laravel({
+      input: ['resources/css/app.css', 'resources/js/app.js'],
+      refresh: true,
+    }),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => ['md-linedivider'].includes(tag),
         }
+      }
+    }),
+  ],
+
+  resolve: {
+    alias: {
+      '@': '/Users/samvel/Desktop/afa/dipi',
     }
+  },
+
+  optimizeDeps: {
+    include: ['vue-yandex-maps']
+  }
 });

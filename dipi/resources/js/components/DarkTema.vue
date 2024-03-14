@@ -9,8 +9,12 @@
 </template>
 
 <script>
-import lightImg from '@/public/image/dark.png'
-import dark from '@/public/image/light.png'
+import lightImg from '@/public/image/dark.png';
+import darkImg from '@/public/image/light.png';
+import icon1Light from '@/public/image/mask_group.png';
+import icon2Light from '@/public/image/mask_group-1.png';
+import icon1Dark from '@/public/image/pngwing.com (4).png';
+import icon2Dark from '@/public/image/pngegg.png';
 
 export default {
   data() {

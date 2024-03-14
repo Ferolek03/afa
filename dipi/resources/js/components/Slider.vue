@@ -1,6 +1,6 @@
 <template>
+
   <div>
-    <h1>Vue Carousel</h1>
     <div class="card-carousel-wrapper">
       <div class="card-carousel--nav__left" @click="moveCarousel(-1)" :class="{ 'disabled': atHeadOfList }"></div>
       <div class="card-carousel">
